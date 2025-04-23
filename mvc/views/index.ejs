@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site para Uploads de Textos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <form action="/" method="post" enctype="multipart/form-data" class="adicionar" onsubmit="return false;">
+            <input id="fileInput" class="inserir" type="file" accept=".doc, .docx">
+            <br>
+            <button type="submit" onclick="lerArquivo()"><i>Ler arquivo</i></button>
+        </form>
+    </div>
+
+
+    <div id="output" style="margin: 20px; padding: 20px; border: 1px solid #ccc; max-height: 60vh; overflow-y: auto;"></div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+    <!--<script src="/js/script.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.js"></script>
+</body>
+</html>
